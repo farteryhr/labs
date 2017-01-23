@@ -2,7 +2,7 @@
 //ANTLR4, 注意 -encoding UTF-8
 grammar cm;
 
-exprList: (expr)*;
+exprList: (expr)? (DELI+? expr)* (DELI*?);
 
 expr
 : ID '其' expr
@@ -87,10 +87,12 @@ ne20: nm4 '京' ne16 | n016;
 ns20: ns4 | n8 | n12 | n16 | n20;
 
 //对于数字解析，ANTLR运行时会报告 attempting full context, context sensitivity，
-//但是似乎都能正确解析。这个数字解析太鬼畜，待修订。
+//但是似乎都能正确解析（个屁）。这个数字解析太鬼畜，待修订。
 num: ('零' | ns20) ('点' ZDIGIT+)?;
 
 CONST: '圆周率' | '自然对数的底' | (ID '常数') | '无穷';
 WS: [ \t\n\r] -> skip;
   
 ID: ('甲'|'乙'|'丙'|'丁'|'子'|'丑'|'寅'|'卯'|'天'|'地'|'人'|'畜') | ('准') ID;
+
+DELI: .;
