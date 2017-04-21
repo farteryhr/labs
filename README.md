@@ -14,15 +14,15 @@ based on expression tree building and memorized subproblem.
 
 supports +-×÷, brackets, power(^), concatenation. features floating point fixing and some pruning.
 
-[Inder J. Taneja's paper][https://arxiv.org/abs/1302.1479]
+[Inder J. Taneja's paper](https://arxiv.org/abs/1302.1479)
 
-[Numberphile's youtube video: the 10958 problem][https://www.youtube.com/watch?v=-ruC5A9EzzE]
+[Numberphile's youtube video: the 10958 problem](https://www.youtube.com/watch?v=-ruC5A9EzzE)
 
 needs 2gb ram for the full size problem.
 
 ## bejeweled.c
 
-how many fields **exactly** are there are stable in the game [Bejeweled][http://www.bejeweled.com/]?
+how many fields **exactly** are there are stable in the game [Bejeweled](http://www.bejeweled.com/)?
 
 8×8, 7 colors, no 3 gems of the same color in a row.
 
