@@ -47,3 +47,17 @@ needs 2×10^9 bytes ram.
 parser of mathematic expressions in Chinese language as close to usually spoken.
 
 the hardest part turns out to be the structure of how a single (big) number is read in chinese.
+
+## sudoku.c
+
+yet another fast and simple sudoku solver. supports both pure naive top-down order and least-candidate-first strategy (switch via `#define`).
+
+with full usage of bitwise operations, balancing number of operations and data footprint, it's able to run 2.5G recursions (naive version) per minute on my laptop (i3 M350 2.27Hz, GCC 4.7.2).
+
+try to crack them, prove whether they have no, unique or multiple solutions.
+```
+4.....8.5.3..........7......2.....6.....8.4......1.......6.3.7.5..2.....1.4......
+..............3.85..1.2.......5.7.....4...1...9.......5......73..2.1........4...9
+.....5.8....6.1.43..........1.5........1.6...3.......553.....61........4.........
+```
+see my [stackoverflow quesion](https://stackoverflow.com/questions/24682039).
