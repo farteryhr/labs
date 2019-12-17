@@ -61,3 +61,11 @@ try to crack them, prove whether they have no, unique or multiple solutions.
 .....5.8....6.1.43..........1.5........1.6...3.......553.....61........4.........
 ```
 see my [stackoverflow quesion](https://stackoverflow.com/questions/24682039).
+
+## t-ex_core.as
+
+core (means pretty much everything) code of flash version of t-ex (available at farter.cn homepage) which is almost direct translation of vb6 version.
+
+old code, old flavor. not uglified/minified by any tool. but it's decompiled from my releases because i lost the source. since it mostly uses global variable, the code is readable.
+
+for example, `kpmr`/`kcmr` means "Key isPressed/frameCounter of Move Right".
