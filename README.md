@@ -22,11 +22,15 @@ needs 2gb ram for the full size problem.
 
 ## bejeweled.c
 
-how many fields **exactly** are there are stable in the game [Bejeweled](http://www.bejeweled.com/)?
+how many fields **exactly** are there are stable in the game [Bejeweled](http://www.bejeweled.com/) (or its ancestor, [shariki](https://en.wikipedia.org/wiki/Shariki))?
 
-8×8, 7 colors, no 3 gems of the same color in a row.
+8×8, 7 colors, stable means no 3 gems of the same color in a row/column.
+
+the answer given is 203601887802130611210536633992503090012487776690503574 which matches the number estimated by generating random fields.
 
 based on essential pattern and some combinatorics, also Chinese remainder theory.
+
+but still no idea for **"no more moves"**.
 
 needs 5gb ram on the full size problem, you have to use 64-bit compilation.
 
