@@ -6,7 +6,7 @@ straightforward yet shitty code.
 
 mostly runnable on a normal pc within some minutes requiring reasonably large RAM.
 
-more at [https://repl.it/@farteryhr/](my repl.it).
+more at [my repl.it](https://repl.it/@farteryhr).
 
 ## 123456789.cpp
 
