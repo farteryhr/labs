@@ -6,6 +6,8 @@ straightforward yet shitty code.
 
 mostly runnable on a normal pc within some minutes requiring reasonably large RAM.
 
+more at [https://repl.it/@farteryhr/](my repl.it).
+
 ## 123456789.cpp
 
 bruteforce enumeration of Crazy Sequential Representation.
