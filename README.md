@@ -24,9 +24,9 @@ needs 2gb ram for the full size problem.
 
 ## bejeweled.c
 
-how many fields **exactly** are there are stable in the game [Bejeweled](http://www.bejeweled.com/) (or its ancestor, [shariki](https://en.wikipedia.org/wiki/Shariki))?
+count how many stable fields/boards **exactly/precisely** are there are in the game [Bejeweled](http://www.bejeweled.com/) (or its ancestor, [shariki](https://en.wikipedia.org/wiki/Shariki))?
 
-8×8, 7 colors, stable means no 3 gems of the same color in a row/column.
+8×8, 7 colors, stable means no 3 gems of the same color in a row/column (regardless of no-more-moves or has-valid-move).
 
 the answer given is 203601887802130611210536633992503090012487776690503574 which matches the number estimated by generating random fields.
 
@@ -56,7 +56,7 @@ the hardest part turns out to be the structure of how a single (big) number is r
 
 ## sudoku.c
 
-yet another fast and simple sudoku solver. supports both pure naive top-down order and least-candidate-first strategy (switch via `#define`).
+yet another fast and simple sudoku solver. supports both pure naive top-down order and least-candidate-first strategy (switch via `#define`). by the name "pure" it is intended to form a well-defined commonly used deterministic algorithm, may be called "standard backtracking bruteforce", "straightforward DFS backtracking", etc.
 
 with full usage of bitwise operations, balancing number of operations and data footprint, it's able to run 2.5G recursions (naive version) per minute on my laptop (i3 M350 2.27Hz, GCC 4.7.2).
 
@@ -65,6 +65,7 @@ try to crack them, prove whether they have no, unique or multiple solutions.
 4.....8.5.3..........7......2.....6.....8.4......1.......6.3.7.5..2.....1.4......
 ..............3.85..1.2.......5.7.....4...1...9.......5......73..2.1........4...9
 .....5.8....6.1.43..........1.5........1.6...3.......553.....61........4.........
+9..8...........5............2..1...3.1.....6....4...7.7.86.........3.1..4.....2..
 ```
 see my [stackoverflow quesion](https://stackoverflow.com/questions/24682039).
 
